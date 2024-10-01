@@ -18,7 +18,7 @@ public class Romain {
 	}
 
 	private String prendreParole() {
-		return "Le romain " + nom + " : "	
+		return "Le romain " + nom + " : "	;
 	}
 
 	public void recevoirCoup(int forceCoup) {
@@ -31,7 +31,9 @@ public class Romain {
 	}
 	
 	public static void main(String[] args) {
-		Romain osterix =  new Romain("Ostérix",5);
+		Romain pamplemus = new Romain("Pamplemus",5);
+		System.out.println(pamplemus.prendreParole());
+		pamplemus.parler("Astérix !");
+		pamplemus.recevoirCoup(2);
 	}
-
 }
